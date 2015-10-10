@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#0099cc"
+    tools:context="com.example.wojciech.saper.BestScoresActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
+        android:text="@string/dummy_content" android:layout_marginTop="4dp" />
+    <TextView android:id="@+id/Rank1" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="20sp" android:gravity="center"
+        android:text="@string/RANK1" android:layout_marginTop="8dp"
+        android:layout_below="@+id/fullscreen_content"
+        />
+    <TextView android:id="@+id/Rank2" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="20sp" android:gravity="center"
+        android:text="@string/RANK2" android:layout_marginTop="4dp"
+        android:layout_below="@+id/Rank1"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_3"
+        android:orientation="vertical"
+        android:layout_below="@+id/Rank2">
+    <TextView android:id="@+id/Rank3" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:keepScreenOn="true" android:textColor="#33b5e5"
+        android:textStyle="bold" android:textSize="20sp" android:gravity="center"
+        android:text="@string/RANK3" android:layout_marginTop="4dp"
+        android:layout_below="@+id/Rank2"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/best_score_edit_text"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:hint="Type Name"
+        android:background="@color/black_overlay"
+        />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/trophy"
+        android:src="@drawable/trophy"/>
+    </RelativeLayout>
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay" android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button android:id="@+id/start" style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/NEW_GAME"
+                android:onClick="onMyClick"/>
+            <Button android:id="@+id/end" style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/EXIT"
+                android:onClick="onMyClick"
+            />s
+            <Button android:id="@+id/ok" style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/OK"
+                android:visibility="gone"
+                android:onClick="onMyClick"
+                />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

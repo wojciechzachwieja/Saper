@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Saper</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Best Scores</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="Exit">Exit</string>
+
+    <string name="title_activity_best_scores">Best Scores</string>
+    <string name="OK">OK</string>
+    <string name="NEW_GAME">New Game</string>
+    <string name="EXIT">Exit</string>
+    <string name="dummy_content">BEST\nSCORES</string>
+    <string name="RANK1">1.</string>
+    <string name="RANK2">2.</string>
+    <string name="RANK3">3.</string>
+
+</resources>
