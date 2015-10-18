@@ -340,28 +340,28 @@ public class MainActivity extends Activity {
             b.setClickable(false);
         switch (i) {
             case 1:
-                b.setTextColor(0xFF3021FF);
+                b.setTextColor(getResources().getColor(R.color.blue));
                 break;
             case 2:
-                b.setTextColor(0xFF05C800);
+                b.setTextColor(getResources().getColor(R.color.green));
                 break;
             case 3:
-                b.setTextColor(0xFFFF171B);
+                b.setTextColor(getResources().getColor(R.color.red));
                 break;
             case 4:
-                b.setTextColor(0xFFD71595);
+                b.setTextColor(getResources().getColor(R.color.purple));
                 break;
             case 5:
-                b.setTextColor(0xFF170B57);
+                b.setTextColor(getResources().getColor(R.color.dark_blue));
                 break;
             case 6:
-                b.setTextColor(0xFFFF8712);
+                b.setTextColor(getResources().getColor(R.color.orange));
                 break;
             case 7:
-                b.setTextColor(0xFF268B00);
+                b.setTextColor(getResources().getColor(R.color.dark_green));
                 break;
             case 8:
-                b.setTextColor(0xFFB7001B);
+                b.setTextColor(getResources().getColor(R.color.dark_red));
                 break;
         }
         FieldBombs.updateCounter();
