@@ -24,4 +24,12 @@
     <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
     <style name="ButtonBarButton" />
 
+
+    <!-- Button Style -->
+    <style name="Button" parent="android:Widget.Button.Small">
+        <item name="android:layout_height">@dimen/default_button_size</item>
+        <item name="android:layout_width">@dimen/default_button_size</item>
+    </style>
+
+
 </resources>
